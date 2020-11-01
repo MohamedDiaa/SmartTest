@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9245EC7254B0325004C1C48 /* SelectGifTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */; };
+		C9245EC8254B0325004C1C48 /* SelectGifTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */; };
+		C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */; };
+		C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */; };
+		C9245ECE254B0355004C1C48 /* SelectGifModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECD254B0355004C1C48 /* SelectGifModels.swift */; };
+		C9245ED0254B036A004C1C48 /* SelectGifRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECF254B036A004C1C48 /* SelectGifRouter.swift */; };
 		C953BD8D254AFA35001298A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BD8C254AFA35001298A3 /* AppDelegate.swift */; };
 		C953BD8F254AFA35001298A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BD8E254AFA35001298A3 /* SceneDelegate.swift */; };
 		C953BD91254AFA35001298A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BD90254AFA35001298A3 /* ViewController.swift */; };
@@ -27,6 +33,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifTableViewController.swift; sourceTree = "<group>"; };
+		C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectGifTableViewController.xib; sourceTree = "<group>"; };
+		C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifInteractor.swift; sourceTree = "<group>"; };
+		C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifPresenter.swift; sourceTree = "<group>"; };
+		C9245ECD254B0355004C1C48 /* SelectGifModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifModels.swift; sourceTree = "<group>"; };
+		C9245ECF254B036A004C1C48 /* SelectGifRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifRouter.swift; sourceTree = "<group>"; };
 		C953BD89254AFA35001298A3 /* SmartTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C953BD8C254AFA35001298A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C953BD8E254AFA35001298A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +70,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C9245EC3254B02A8004C1C48 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				C96B11ED254B065D00050D2E /* New Group */,
+				C9245EC4254B02AE004C1C48 /* SelectGif */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		C9245EC4254B02AE004C1C48 /* SelectGif */ = {
+			isa = PBXGroup;
+			children = (
+				C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */,
+				C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */,
+				C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */,
+				C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */,
+				C9245ECD254B0355004C1C48 /* SelectGifModels.swift */,
+				C9245ECF254B036A004C1C48 /* SelectGifRouter.swift */,
+			);
+			path = SelectGif;
+			sourceTree = "<group>";
+		};
 		C953BD80254AFA35001298A3 = {
 			isa = PBXGroup;
 			children = (
@@ -79,6 +113,7 @@
 		C953BD8B254AFA35001298A3 /* SmartTest */ = {
 			isa = PBXGroup;
 			children = (
+				C9245EC3254B02A8004C1C48 /* Scenes */,
 				C953BD8C254AFA35001298A3 /* AppDelegate.swift */,
 				C953BD8E254AFA35001298A3 /* SceneDelegate.swift */,
 				C953BD90254AFA35001298A3 /* ViewController.swift */,
@@ -86,6 +121,7 @@
 				C953BD95254AFA3B001298A3 /* Assets.xcassets */,
 				C953BD97254AFA3B001298A3 /* LaunchScreen.storyboard */,
 				C953BD9A254AFA3B001298A3 /* Info.plist */,
+				C953BDAE254AFB46001298A3 /* Services */,
 			);
 			path = SmartTest;
 			sourceTree = "<group>";
@@ -97,6 +133,20 @@
 				C953BDA5254AFA3B001298A3 /* Info.plist */,
 			);
 			path = SmartTestTests;
+			sourceTree = "<group>";
+		};
+		C953BDAE254AFB46001298A3 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C96B11ED254B065D00050D2E /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9245EC8254B0325004C1C48 /* SelectGifTableViewController.xib in Resources */,
 				C953BD99254AFA3B001298A3 /* LaunchScreen.storyboard in Resources */,
 				C953BD96254AFA3B001298A3 /* Assets.xcassets in Resources */,
 				C953BD94254AFA35001298A3 /* Main.storyboard in Resources */,
@@ -200,9 +251,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9245ECE254B0355004C1C48 /* SelectGifModels.swift in Sources */,
+				C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */,
 				C953BD91254AFA35001298A3 /* ViewController.swift in Sources */,
 				C953BD8D254AFA35001298A3 /* AppDelegate.swift in Sources */,
+				C9245EC7254B0325004C1C48 /* SelectGifTableViewController.swift in Sources */,
 				C953BD8F254AFA35001298A3 /* SceneDelegate.swift in Sources */,
+				C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */,
+				C9245ED0254B036A004C1C48 /* SelectGifRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
