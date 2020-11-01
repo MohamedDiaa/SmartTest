@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		C9245EC7254B0325004C1C48 /* SelectGifTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */; };
-		C9245EC8254B0325004C1C48 /* SelectGifTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */; };
 		C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */; };
 		C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */; };
 		C9245ECE254B0355004C1C48 /* SelectGifModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECD254B0355004C1C48 /* SelectGifModels.swift */; };
@@ -23,6 +22,18 @@
 		C96B11F2254F60CE00050D2E /* GifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11F0254F60CE00050D2E /* GifTableViewCell.swift */; };
 		C96B11F3254F60CE00050D2E /* GifTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96B11F1254F60CE00050D2E /* GifTableViewCell.xib */; };
 		C96B11F6254F658900050D2E /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11F5254F658900050D2E /* Env.swift */; };
+		C96B11F9254F722B00050D2E /* GuessGifInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11F8254F722B00050D2E /* GuessGifInteractor.swift */; };
+		C96B11FB254F723600050D2E /* GuessGifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11FA254F723600050D2E /* GuessGifPresenter.swift */; };
+		C96B11FD254F723F00050D2E /* GuessGifModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11FC254F723E00050D2E /* GuessGifModels.swift */; };
+		C96B11FF254F724700050D2E /* GuessGifRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11FE254F724700050D2E /* GuessGifRouter.swift */; };
+		C96B1201254F726D00050D2E /* GuessGifTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1200254F726D00050D2E /* GuessGifTableViewController.swift */; };
+		C96B1203254F735200050D2E /* GuessGif.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96B1202254F735200050D2E /* GuessGif.storyboard */; };
+		C96B1206254F782C00050D2E /* ScoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1205254F782C00050D2E /* ScoreInteractor.swift */; };
+		C96B1208254F783700050D2E /* ScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1207254F783700050D2E /* ScorePresenter.swift */; };
+		C96B120A254F784500050D2E /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1209254F784500050D2E /* ScoreViewController.swift */; };
+		C96B120C254F784E00050D2E /* ScoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B120B254F784E00050D2E /* ScoreModels.swift */; };
+		C96B120E254F785E00050D2E /* ScoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B120D254F785E00050D2E /* ScoreRouter.swift */; };
+		C96B1210254F786C00050D2E /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96B120F254F786C00050D2E /* Score.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +48,6 @@
 
 /* Begin PBXFileReference section */
 		C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifTableViewController.swift; sourceTree = "<group>"; };
-		C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectGifTableViewController.xib; sourceTree = "<group>"; };
 		C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifInteractor.swift; sourceTree = "<group>"; };
 		C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifPresenter.swift; sourceTree = "<group>"; };
 		C9245ECD254B0355004C1C48 /* SelectGifModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifModels.swift; sourceTree = "<group>"; };
@@ -56,6 +66,18 @@
 		C96B11F0254F60CE00050D2E /* GifTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTableViewCell.swift; sourceTree = "<group>"; };
 		C96B11F1254F60CE00050D2E /* GifTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTableViewCell.xib; sourceTree = "<group>"; };
 		C96B11F5254F658900050D2E /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		C96B11F8254F722B00050D2E /* GuessGifInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifInteractor.swift; sourceTree = "<group>"; };
+		C96B11FA254F723600050D2E /* GuessGifPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifPresenter.swift; sourceTree = "<group>"; };
+		C96B11FC254F723E00050D2E /* GuessGifModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifModels.swift; sourceTree = "<group>"; };
+		C96B11FE254F724700050D2E /* GuessGifRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifRouter.swift; sourceTree = "<group>"; };
+		C96B1200254F726D00050D2E /* GuessGifTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifTableViewController.swift; sourceTree = "<group>"; };
+		C96B1202254F735200050D2E /* GuessGif.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuessGif.storyboard; sourceTree = "<group>"; };
+		C96B1205254F782C00050D2E /* ScoreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreInteractor.swift; sourceTree = "<group>"; };
+		C96B1207254F783700050D2E /* ScorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePresenter.swift; sourceTree = "<group>"; };
+		C96B1209254F784500050D2E /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		C96B120B254F784E00050D2E /* ScoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModels.swift; sourceTree = "<group>"; };
+		C96B120D254F785E00050D2E /* ScoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRouter.swift; sourceTree = "<group>"; };
+		C96B120F254F786C00050D2E /* Score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Score.storyboard; path = ../../../../../../../Applications/Score.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,7 @@
 		C9245EC3254B02A8004C1C48 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				C96B1204254F77F700050D2E /* Score */,
 				C96B11ED254B065D00050D2E /* GuessGif */,
 				C9245EC4254B02AE004C1C48 /* SelectGif */,
 			);
@@ -89,7 +112,6 @@
 			isa = PBXGroup;
 			children = (
 				C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */,
-				C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */,
 				C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */,
 				C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */,
 				C9245ECD254B0355004C1C48 /* SelectGifModels.swift */,
@@ -153,6 +175,12 @@
 		C96B11ED254B065D00050D2E /* GuessGif */ = {
 			isa = PBXGroup;
 			children = (
+				C96B11F8254F722B00050D2E /* GuessGifInteractor.swift */,
+				C96B11FA254F723600050D2E /* GuessGifPresenter.swift */,
+				C96B11FC254F723E00050D2E /* GuessGifModels.swift */,
+				C96B11FE254F724700050D2E /* GuessGifRouter.swift */,
+				C96B1200254F726D00050D2E /* GuessGifTableViewController.swift */,
+				C96B1202254F735200050D2E /* GuessGif.storyboard */,
 			);
 			path = GuessGif;
 			sourceTree = "<group>";
@@ -181,6 +209,19 @@
 				C96B11F1254F60CE00050D2E /* GifTableViewCell.xib */,
 			);
 			path = GifTableViewCell;
+			sourceTree = "<group>";
+		};
+		C96B1204254F77F700050D2E /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				C96B1205254F782C00050D2E /* ScoreInteractor.swift */,
+				C96B1207254F783700050D2E /* ScorePresenter.swift */,
+				C96B1209254F784500050D2E /* ScoreViewController.swift */,
+				C96B120B254F784E00050D2E /* ScoreModels.swift */,
+				C96B120D254F785E00050D2E /* ScoreRouter.swift */,
+				C96B120F254F786C00050D2E /* Score.storyboard */,
+			);
+			path = Score;
 			sourceTree = "<group>";
 		};
 		F7FE7E0CDF11D99D6CCCE337 /* Pods */ = {
@@ -271,11 +312,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9245EC8254B0325004C1C48 /* SelectGifTableViewController.xib in Resources */,
 				C953BD99254AFA3B001298A3 /* LaunchScreen.storyboard in Resources */,
+				C96B1210254F786C00050D2E /* Score.storyboard in Resources */,
 				C96B11F3254F60CE00050D2E /* GifTableViewCell.xib in Resources */,
 				C953BD96254AFA3B001298A3 /* Assets.xcassets in Resources */,
 				C953BD94254AFA35001298A3 /* Main.storyboard in Resources */,
+				C96B1203254F735200050D2E /* GuessGif.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,11 +340,21 @@
 				C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */,
 				C96B11F2254F60CE00050D2E /* GifTableViewCell.swift in Sources */,
 				C953BD91254AFA35001298A3 /* ViewController.swift in Sources */,
+				C96B120E254F785E00050D2E /* ScoreRouter.swift in Sources */,
+				C96B11FF254F724700050D2E /* GuessGifRouter.swift in Sources */,
 				C953BD8D254AFA35001298A3 /* AppDelegate.swift in Sources */,
+				C96B1206254F782C00050D2E /* ScoreInteractor.swift in Sources */,
 				C9245EC7254B0325004C1C48 /* SelectGifTableViewController.swift in Sources */,
+				C96B11FB254F723600050D2E /* GuessGifPresenter.swift in Sources */,
 				C953BD8F254AFA35001298A3 /* SceneDelegate.swift in Sources */,
 				C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */,
+				C96B1201254F726D00050D2E /* GuessGifTableViewController.swift in Sources */,
+				C96B11FD254F723F00050D2E /* GuessGifModels.swift in Sources */,
+				C96B1208254F783700050D2E /* ScorePresenter.swift in Sources */,
+				C96B11F9254F722B00050D2E /* GuessGifInteractor.swift in Sources */,
 				C9245ED0254B036A004C1C48 /* SelectGifRouter.swift in Sources */,
+				C96B120C254F784E00050D2E /* ScoreModels.swift in Sources */,
+				C96B120A254F784500050D2E /* ScoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

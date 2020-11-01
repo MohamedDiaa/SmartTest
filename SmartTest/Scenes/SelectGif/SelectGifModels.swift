@@ -8,7 +8,7 @@
 
 import Foundation
 
-class SelectGif {
+struct SelectGif {
     
     struct SearchForGif {
         

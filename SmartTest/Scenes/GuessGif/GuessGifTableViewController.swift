@@ -1,23 +1,23 @@
 //
-//  SelectGifTableViewController.swift
+//  GuessGifTableViewController.swift
 //  SmartTest
 //
-//  Created by Mohamed Diaa on 2020-10-29.
+//  Created by Mohamed Diaa on 2020-11-01.
 //  Copyright © 2020 Mohamed Diaa. All rights reserved.
 //
 
 import UIKit
 
-protocol SelectGifDisplayLogic: class {
+protocol  GuessGifDisplayLogic: class {
     
-    func displaySearchForGif(viewModel: SelectGif.SearchForGif.ViewModel)
-    func displaySelectGif(viewModel: SelectGif.SelectGif.ViewModel)
 }
 
-class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating {
+class GuessGifTableViewController: UITableViewController, GuessGifDisplayLogic, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating {
     
-    var interactor: SelectGifBusinessLogic?
-    var router: SelectGifRoutingLogic?
+    var interactor: GuessGifBusinessLogic?
+    var router: GuessGifRoutingLogic?
+
+    // MARK: - setup
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -27,9 +27,9 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     func setup() {
         
         let view = self
-        let interactor = SelectGifInteractor()
-        let presenter = SelectGifPresenter()
-        let router = SelectGifRouter()
+        let interactor = GuessGifInteractor()
+        let presenter = GuessGifPresenter()
+        let router = GuessGifRouter()
         
         view.interactor = interactor
         view.router = router
@@ -48,10 +48,10 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
         let search = UISearchController(searchResultsController: nil)
         search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
-        search.searchBar.placeholder = "Search for a gif the test"
+        search.searchBar.placeholder = "Guess what this gif is about"
         navigationItem.searchController = search
         
-        let startButton = UIBarButtonItem(title: "Start",
+        let startButton = UIBarButtonItem(title: "Finish",
                                           style: .plain,
                                           target: self,
                                           action: #selector(start))
@@ -59,7 +59,6 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
         navigationItem.rightBarButtonItems = [startButton]
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     }
-    
     
     // MARK: - Table view data source
     
@@ -72,6 +71,7 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     }
     
     
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
@@ -82,6 +82,8 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
         return cell
     }
     
+    
+    
     // MARK: - display logic
     
     func updateSearchResults(for searchController: UISearchController) {
@@ -89,19 +91,8 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
         print(text)
     }
     
-    func displaySearchForGif(viewModel: SelectGif.SearchForGif.ViewModel) {
-        
-    }
-    
-    func displaySelectGif(viewModel: SelectGif.SelectGif.ViewModel){
-     
-        router?.routeToGuessGif()
-
-    }
     
     @IBAction func start() {
-
-        let request = SelectGif.SelectGif.Request()
-        interactor?.selectGif(request: request)
+        
     }
 }

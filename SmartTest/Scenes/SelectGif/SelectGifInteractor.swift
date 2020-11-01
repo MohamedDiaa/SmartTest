@@ -12,10 +12,15 @@ protocol SelectGifBusinessLogic: class {
     
     func searchForGif(request: SelectGif.SearchForGif.Request)
     func selectGif(request: SelectGif.SelectGif.Request)
-
 }
 
-class SelectGifInteractor: SelectGifBusinessLogic {
+protocol SelectGifDataStore: class {
+    
+}
+
+class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
+    
+    var presenter: SelectGifPresentationLogic?
     
     func searchForGif(request: SelectGif.SearchForGif.Request){
         
@@ -23,5 +28,7 @@ class SelectGifInteractor: SelectGifBusinessLogic {
     
     func selectGif(request: SelectGif.SelectGif.Request){
         
+        let response = SelectGif.SelectGif.Response()
+        presenter?.presentSelectGif(response: response)
     }
 }
