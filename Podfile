@@ -6,11 +6,12 @@ target 'SmartTest' do
   use_frameworks!
 
   # Pods for SmartTest
+  pod 'Giphy'
 
   target 'SmartTestTests' do
     inherit! :search_paths
     # Pods for testing
-	pod 'Giphy' 
+
 
   end
 

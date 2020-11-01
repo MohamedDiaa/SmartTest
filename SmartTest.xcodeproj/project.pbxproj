@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		43435DDD4010171ED4464048 /* Pods_SmartTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0826D0A12E4BD62924EF2EF9 /* Pods_SmartTestTests.framework */; };
-		A5616E3A94AB0AD5F1E96FA4 /* Pods_SmartTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1980774049375831CECBF69 /* Pods_SmartTest.framework */; };
 		C9245EC7254B0325004C1C48 /* SelectGifTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */; };
 		C9245EC8254B0325004C1C48 /* SelectGifTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */; };
 		C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */; };
@@ -24,6 +22,7 @@
 		C953BDA4254AFA3B001298A3 /* SmartTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BDA3254AFA3B001298A3 /* SmartTestTests.swift */; };
 		C96B11F2254F60CE00050D2E /* GifTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11F0254F60CE00050D2E /* GifTableViewCell.swift */; };
 		C96B11F3254F60CE00050D2E /* GifTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C96B11F1254F60CE00050D2E /* GifTableViewCell.xib */; };
+		C96B11F6254F658900050D2E /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11F5254F658900050D2E /* Env.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,11 +36,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		075CD1935C56A155A068C2A6 /* Pods-SmartTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTest.release.xcconfig"; path = "Target Support Files/Pods-SmartTest/Pods-SmartTest.release.xcconfig"; sourceTree = "<group>"; };
-		0826D0A12E4BD62924EF2EF9 /* Pods_SmartTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		106AB684E9257E97D44EC38F /* Pods-SmartTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTest.debug.xcconfig"; path = "Target Support Files/Pods-SmartTest/Pods-SmartTest.debug.xcconfig"; sourceTree = "<group>"; };
-		53534363286D1310CF6EEB0F /* Pods-SmartTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTestTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartTestTests/Pods-SmartTestTests.debug.xcconfig"; sourceTree = "<group>"; };
-		A1980774049375831CECBF69 /* Pods_SmartTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9245EC5254B0325004C1C48 /* SelectGifTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifTableViewController.swift; sourceTree = "<group>"; };
 		C9245EC6254B0325004C1C48 /* SelectGifTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectGifTableViewController.xib; sourceTree = "<group>"; };
 		C9245EC9254B033D004C1C48 /* SelectGifInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifInteractor.swift; sourceTree = "<group>"; };
@@ -61,7 +55,7 @@
 		C953BDA5254AFA3B001298A3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C96B11F0254F60CE00050D2E /* GifTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GifTableViewCell.swift; sourceTree = "<group>"; };
 		C96B11F1254F60CE00050D2E /* GifTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GifTableViewCell.xib; sourceTree = "<group>"; };
-		CF327759EB530E3265430DEA /* Pods-SmartTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartTestTests.release.xcconfig"; path = "Target Support Files/Pods-SmartTestTests/Pods-SmartTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C96B11F5254F658900050D2E /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +63,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5616E3A94AB0AD5F1E96FA4 /* Pods_SmartTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43435DDD4010171ED4464048 /* Pods_SmartTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,7 +105,6 @@
 				C953BDA2254AFA3B001298A3 /* SmartTestTests */,
 				C953BD8A254AFA35001298A3 /* Products */,
 				F7FE7E0CDF11D99D6CCCE337 /* Pods */,
-				E5ABF615EFC0D5334079734F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,7 +129,6 @@
 				C953BD95254AFA3B001298A3 /* Assets.xcassets */,
 				C953BD97254AFA3B001298A3 /* LaunchScreen.storyboard */,
 				C953BD9A254AFA3B001298A3 /* Info.plist */,
-				C953BDAE254AFB46001298A3 /* Services */,
 			);
 			path = SmartTest;
 			sourceTree = "<group>";
@@ -155,6 +145,7 @@
 		C953BDAE254AFB46001298A3 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C96B11F5254F658900050D2E /* Env.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -169,6 +160,7 @@
 		C96B11EE254F609E00050D2E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C953BDAE254AFB46001298A3 /* Services */,
 				C96B11EF254F60A500050D2E /* UITableViewCell */,
 			);
 			path = Shared;
@@ -183,24 +175,10 @@
 			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
-		E5ABF615EFC0D5334079734F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A1980774049375831CECBF69 /* Pods_SmartTest.framework */,
-				0826D0A12E4BD62924EF2EF9 /* Pods_SmartTestTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		F7FE7E0CDF11D99D6CCCE337 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				106AB684E9257E97D44EC38F /* Pods-SmartTest.debug.xcconfig */,
-				075CD1935C56A155A068C2A6 /* Pods-SmartTest.release.xcconfig */,
-				53534363286D1310CF6EEB0F /* Pods-SmartTestTests.debug.xcconfig */,
-				CF327759EB530E3265430DEA /* Pods-SmartTestTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -211,7 +189,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C953BDA8254AFA3B001298A3 /* Build configuration list for PBXNativeTarget "SmartTest" */;
 			buildPhases = (
-				47B917EC4CCAA8975B3CBBB3 /* [CP] Check Pods Manifest.lock */,
 				C953BD85254AFA35001298A3 /* Sources */,
 				C953BD86254AFA35001298A3 /* Frameworks */,
 				C953BD87254AFA35001298A3 /* Resources */,
@@ -229,11 +206,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C953BDAB254AFA3B001298A3 /* Build configuration list for PBXNativeTarget "SmartTestTests" */;
 			buildPhases = (
-				A817FA98C5AD738553E12491 /* [CP] Check Pods Manifest.lock */,
 				C953BD9B254AFA3B001298A3 /* Sources */,
 				C953BD9C254AFA3B001298A3 /* Frameworks */,
 				C953BD9D254AFA3B001298A3 /* Resources */,
-				EFEA15F8B49D6CBFDD36182E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -305,75 +280,12 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		47B917EC4CCAA8975B3CBBB3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SmartTest-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A817FA98C5AD738553E12491 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SmartTestTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EFEA15F8B49D6CBFDD36182E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmartTestTests/Pods-SmartTestTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SmartTestTests/Pods-SmartTestTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartTestTests/Pods-SmartTestTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		C953BD85254AFA35001298A3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C96B11F6254F658900050D2E /* Env.swift in Sources */,
 				C9245ECE254B0355004C1C48 /* SelectGifModels.swift in Sources */,
 				C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */,
 				C96B11F2254F60CE00050D2E /* GifTableViewCell.swift in Sources */,
@@ -456,6 +368,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -516,6 +429,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -540,10 +454,12 @@
 		};
 		C953BDA9254AFA3B001298A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 106AB684E9257E97D44EC38F /* Pods-SmartTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SmartTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -551,6 +467,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.SmartTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -558,10 +475,12 @@
 		};
 		C953BDAA254AFA3B001298A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 075CD1935C56A155A068C2A6 /* Pods-SmartTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SmartTest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -569,6 +488,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.me.SmartTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -576,7 +496,6 @@
 		};
 		C953BDAC254AFA3B001298A3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53534363286D1310CF6EEB0F /* Pods-SmartTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -598,7 +517,6 @@
 		};
 		C953BDAD254AFA3B001298A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF327759EB530E3265430DEA /* Pods-SmartTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
