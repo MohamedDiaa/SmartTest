@@ -14,13 +14,21 @@ protocol SelectGifDisplayLogic: class {
     func displaySelectGif(viewModel: SelectGif.SelectGif.ViewModel)
 }
 
-class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic {
-        
+class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let search = UISearchController(searchResultsController: nil)
+        search.searchResultsUpdater = self
+        search.obscuresBackgroundDuringPresentation = false
+        search.searchBar.placeholder = "Type something here to search"
+        navigationItem.searchController = search
 
+        
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     }
+    
 
     // MARK: - Table view data source
 
@@ -47,6 +55,11 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
 
     
     // MARK: - display logic
+    
+    func updateSearchResults(for searchController: UISearchController) {
+        guard let text = searchController.searchBar.text else { return }
+        print(text)
+       }
     
     func displaySearchForGif(viewModel: SelectGif.SearchForGif.ViewModel) {
         

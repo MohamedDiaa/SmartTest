@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -79,7 +79,7 @@
 		C9245EC3254B02A8004C1C48 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				C96B11ED254B065D00050D2E /* New Group */,
+				C96B11ED254B065D00050D2E /* GuessGif */,
 				C9245EC4254B02AE004C1C48 /* SelectGif */,
 			);
 			path = Scenes;
@@ -150,11 +150,11 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
-		C96B11ED254B065D00050D2E /* New Group */ = {
+		C96B11ED254B065D00050D2E /* GuessGif */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = "New Group";
+			path = GuessGif;
 			sourceTree = "<group>";
 		};
 		C96B11EE254F609E00050D2E /* Shared */ = {
@@ -169,10 +169,18 @@
 		C96B11EF254F60A500050D2E /* UITableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				C96B11F7254F6C0400050D2E /* GifTableViewCell */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		C96B11F7254F6C0400050D2E /* GifTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
 				C96B11F0254F60CE00050D2E /* GifTableViewCell.swift */,
 				C96B11F1254F60CE00050D2E /* GifTableViewCell.xib */,
 			);
-			path = UITableViewCell;
+			path = GifTableViewCell;
 			sourceTree = "<group>";
 		};
 		F7FE7E0CDF11D99D6CCCE337 /* Pods */ = {
