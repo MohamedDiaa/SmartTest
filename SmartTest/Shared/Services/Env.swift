@@ -15,7 +15,8 @@ class Env {
     
     static let shared = Env()
     
-    init() {
-      //  Giphy.configure(apiKey: "your ios sdk key here")
-    }
+    let giphyAPIKey = "EYFsIyylmUSz1jyquTckOh7rvNIb7uA0"
+    
+    init() {}
+    
 }

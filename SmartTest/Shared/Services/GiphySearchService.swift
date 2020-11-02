@@ -22,7 +22,7 @@ class GiphySearchService: GiphySearchServiceProtocol{
         
         task?.cancel()
         
-        guard let url = URLResources.GiphySearch.url
+        guard let url = constructURL(query: query)
             else { return }
         
         task =  URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -40,4 +40,22 @@ class GiphySearchService: GiphySearchServiceProtocol{
         task?.resume()
     }
     
+    func constructURL(query: String) -> URL? {
+        
+        var components = URLComponents()
+        components.scheme = URLResources.GiphySearch.scheme
+        components.host = URLResources.GiphySearch.host
+        components.path = URLResources.GiphySearch.path
+        
+        components.queryItems = [
+            URLQueryItem(name: "api_key", value: Env.shared.giphyAPIKey),
+            URLQueryItem(name: "q", value: query),
+            URLQueryItem(name: "limit", value: "25"),
+            URLQueryItem(name: "offset", value: "0"),
+            URLQueryItem(name: "rating", value: "g"),
+            URLQueryItem(name: "lang", value: "en")
+        ]
+        
+        return components.url
+    }
 }
