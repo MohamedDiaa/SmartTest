@@ -12,17 +12,19 @@ struct SelectGif {
     
     struct SearchForGif {
         
-         struct Request {
-             
-         }
-         struct Response {
-             
-         }
-         
-         struct ViewModel {
-             
-         }
-     }
+        struct Request {
+            var query: String?
+        }
+        struct Response {
+          
+            var welcome: Welcome?
+            var error: Error?
+        }
+        
+        struct ViewModel {
+            var urls: [String]?
+        }
+    }
     
     struct SelectGif {
         struct Request {

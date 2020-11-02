@@ -19,6 +19,8 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     var interactor: SelectGifBusinessLogic?
     var router: SelectGifRoutingLogic?
     
+    var searchViewModel : SelectGif.SearchForGif.ViewModel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
@@ -68,15 +70,23 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        guard let viewModel = searchViewModel
+            else{ return 0 }
+        
+        return viewModel.urls?.count ?? 0
     }
     
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
         // Configure the cell...
-        cell.textLabel?.text = "Hello"
+        
+        let url = searchViewModel?.urls?[indexPath.row]
+        print(url)
+        cell.textLabel?.text = url //"Hello"
         cell.textLabel?.textColor = .black
         
         return cell
@@ -85,22 +95,31 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     // MARK: - display logic
     
     func updateSearchResults(for searchController: UISearchController) {
+        
         guard let text = searchController.searchBar.text else { return }
-        print(text)
+        
+        let request =  SelectGif.SearchForGif.Request(query: text)
+        interactor?.searchForGif(request: request)
     }
     
     func displaySearchForGif(viewModel: SelectGif.SearchForGif.ViewModel) {
         
+        self.searchViewModel = viewModel
+        
+        DispatchQueue.main.async { [weak self] in
+        
+            self?.tableView.reloadData()
+        }
     }
     
     func displaySelectGif(viewModel: SelectGif.SelectGif.ViewModel){
-     
+        
         router?.routeToGuessGif()
-
+        
     }
     
     @IBAction func start() {
-
+        
         let request = SelectGif.SelectGif.Request()
         interactor?.selectGif(request: request)
     }

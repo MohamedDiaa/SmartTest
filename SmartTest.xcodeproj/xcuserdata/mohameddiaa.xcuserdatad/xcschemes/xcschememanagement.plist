@@ -7,7 +7,20 @@
 		<key>SmartTest.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>6</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>C953BD88254AFA35001298A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C953BD9E254AFA3B001298A3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

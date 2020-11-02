@@ -34,6 +34,9 @@
 		C96B120C254F784E00050D2E /* ScoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B120B254F784E00050D2E /* ScoreModels.swift */; };
 		C96B120E254F785E00050D2E /* ScoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B120D254F785E00050D2E /* ScoreRouter.swift */; };
 		C96B1210254F786C00050D2E /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96B120F254F786C00050D2E /* Score.storyboard */; };
+		C983D08E2550960A00EDFFB4 /* GiphySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D08D2550960A00EDFFB4 /* GiphySearchService.swift */; };
+		C983D0912550964A00EDFFB4 /* URL+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D0902550964A00EDFFB4 /* URL+Resources.swift */; };
+		C983D09625509BFE00EDFFB4 /* GiphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09525509BFE00EDFFB4 /* GiphModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		C96B120B254F784E00050D2E /* ScoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModels.swift; sourceTree = "<group>"; };
 		C96B120D254F785E00050D2E /* ScoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRouter.swift; sourceTree = "<group>"; };
 		C96B120F254F786C00050D2E /* Score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Score.storyboard; path = ../../../../../../../Applications/Score.storyboard; sourceTree = "<group>"; };
+		C983D08D2550960A00EDFFB4 /* GiphySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphySearchService.swift; sourceTree = "<group>"; };
+		C983D0902550964A00EDFFB4 /* URL+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Resources.swift"; sourceTree = "<group>"; };
+		C983D09525509BFE00EDFFB4 /* GiphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +132,6 @@
 				C953BD8B254AFA35001298A3 /* SmartTest */,
 				C953BDA2254AFA3B001298A3 /* SmartTestTests */,
 				C953BD8A254AFA35001298A3 /* Products */,
-				F7FE7E0CDF11D99D6CCCE337 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				C96B11F5254F658900050D2E /* Env.swift */,
+				C983D08D2550960A00EDFFB4 /* GiphySearchService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -188,8 +194,10 @@
 		C96B11EE254F609E00050D2E /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C983D09425509BDE00EDFFB4 /* Views */,
+				C983D09225509BD000EDFFB4 /* Models */,
+				C983D08F2550963400EDFFB4 /* Resources */,
 				C953BDAE254AFB46001298A3 /* Services */,
-				C96B11EF254F60A500050D2E /* UITableViewCell */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -224,11 +232,28 @@
 			path = Score;
 			sourceTree = "<group>";
 		};
-		F7FE7E0CDF11D99D6CCCE337 /* Pods */ = {
+		C983D08F2550963400EDFFB4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				C983D0902550964A00EDFFB4 /* URL+Resources.swift */,
 			);
-			path = Pods;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C983D09225509BD000EDFFB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C983D09525509BFE00EDFFB4 /* GiphModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C983D09425509BDE00EDFFB4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C96B11EF254F60A500050D2E /* UITableViewCell */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,6 +367,7 @@
 				C953BD91254AFA35001298A3 /* ViewController.swift in Sources */,
 				C96B120E254F785E00050D2E /* ScoreRouter.swift in Sources */,
 				C96B11FF254F724700050D2E /* GuessGifRouter.swift in Sources */,
+				C983D09625509BFE00EDFFB4 /* GiphModel.swift in Sources */,
 				C953BD8D254AFA35001298A3 /* AppDelegate.swift in Sources */,
 				C96B1206254F782C00050D2E /* ScoreInteractor.swift in Sources */,
 				C9245EC7254B0325004C1C48 /* SelectGifTableViewController.swift in Sources */,
@@ -350,11 +376,13 @@
 				C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */,
 				C96B1201254F726D00050D2E /* GuessGifTableViewController.swift in Sources */,
 				C96B11FD254F723F00050D2E /* GuessGifModels.swift in Sources */,
+				C983D0912550964A00EDFFB4 /* URL+Resources.swift in Sources */,
 				C96B1208254F783700050D2E /* ScorePresenter.swift in Sources */,
 				C96B11F9254F722B00050D2E /* GuessGifInteractor.swift in Sources */,
 				C9245ED0254B036A004C1C48 /* SelectGifRouter.swift in Sources */,
 				C96B120C254F784E00050D2E /* ScoreModels.swift in Sources */,
 				C96B120A254F784500050D2E /* ScoreViewController.swift in Sources */,
+				C983D08E2550960A00EDFFB4 /* GiphySearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

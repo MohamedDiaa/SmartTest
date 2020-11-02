@@ -20,7 +20,9 @@ class SelectGifPresenter: SelectGifPresentationLogic {
     
     func presentSearchForGif(response: SelectGif.SearchForGif.Response) {
         
-        let viewModel = SelectGif.SearchForGif.ViewModel()
+        let urlStrings = response.welcome?.data?.compactMap{ $0.images?.downsized?.url }
+        
+        let viewModel = SelectGif.SearchForGif.ViewModel(urls: urlStrings)
         viewController?.displaySearchForGif(viewModel: viewModel)
     }
     

@@ -21,9 +21,19 @@ protocol SelectGifDataStore: class {
 class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
     
     var presenter: SelectGifPresentationLogic?
+    var giphySearchService: GiphySearchServiceProtocol =  GiphySearchService()
     
     func searchForGif(request: SelectGif.SearchForGif.Request){
         
+        guard let query = request.query, query.count > 3
+            else{ return }
+        
+        giphySearchService.search(query: query, completion: { [weak self] (welcome, error) in
+                
+            let response = SelectGif.SearchForGif.Response(welcome: welcome, error: error)
+            self?.presenter?.presentSearchForGif(response: response)
+            
+        })
     }
     
     func selectGif(request: SelectGif.SelectGif.Request){
