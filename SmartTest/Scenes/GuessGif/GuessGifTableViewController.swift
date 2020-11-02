@@ -15,7 +15,7 @@ protocol  GuessGifDisplayLogic: class {
 class GuessGifTableViewController: UITableViewController, GuessGifDisplayLogic, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating {
     
     var interactor: GuessGifBusinessLogic?
-    var router: GuessGifRoutingLogic?
+    var router: (GuessGifRoutingLogic & GuessGifDataPassing)?
 
     // MARK: - setup
     

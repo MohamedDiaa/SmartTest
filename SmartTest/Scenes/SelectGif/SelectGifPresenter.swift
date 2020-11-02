@@ -29,7 +29,7 @@ class SelectGifPresenter: SelectGifPresentationLogic {
     
     func presentSelectGif(response: SelectGif.SelectGif.Response) {
         
-        let viewModel = SelectGif.SelectGif.ViewModel()
+        let viewModel = SelectGif.SelectGif.ViewModel(scene: .guessGif)
         viewController?.displaySelectGif(viewModel: viewModel)
     }
     

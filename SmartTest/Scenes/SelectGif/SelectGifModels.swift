@@ -28,14 +28,15 @@ struct SelectGif {
     
     struct SelectGif {
         struct Request {
-            
+            var selectedURL: String?
         }
+     
         struct Response {
             
         }
         
         struct ViewModel {
-            
+            var scene: Scene?
         }
     }
 }

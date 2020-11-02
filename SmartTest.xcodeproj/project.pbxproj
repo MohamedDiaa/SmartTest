@@ -39,6 +39,7 @@
 		C983D09625509BFE00EDFFB4 /* GiphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09525509BFE00EDFFB4 /* GiphModel.swift */; };
 		C983D0992550A4B100EDFFB4 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D0982550A4B100EDFFB4 /* BaseTableViewController.swift */; };
 		C983D09B2550A6DB00EDFFB4 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09A2550A6DB00EDFFB4 /* UIImage+Gif.swift */; };
+		C983D09D2550ABAE00EDFFB4 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09C2550ABAE00EDFFB4 /* Scene.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		C983D09525509BFE00EDFFB4 /* GiphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphModel.swift; sourceTree = "<group>"; };
 		C983D0982550A4B100EDFFB4 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		C983D09A2550A6DB00EDFFB4 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
+		C983D09C2550ABAE00EDFFB4 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +268,7 @@
 			children = (
 				C983D0982550A4B100EDFFB4 /* BaseTableViewController.swift */,
 				C983D09A2550A6DB00EDFFB4 /* UIImage+Gif.swift */,
+				C983D09C2550ABAE00EDFFB4 /* Scene.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 				C9245ECE254B0355004C1C48 /* SelectGifModels.swift in Sources */,
 				C9245ECA254B033D004C1C48 /* SelectGifInteractor.swift in Sources */,
 				C96B11F2254F60CE00050D2E /* GifTableViewCell.swift in Sources */,
+				C983D09D2550ABAE00EDFFB4 /* Scene.swift in Sources */,
 				C953BD91254AFA35001298A3 /* ViewController.swift in Sources */,
 				C96B120E254F785E00050D2E /* ScoreRouter.swift in Sources */,
 				C96B11FF254F724700050D2E /* GuessGifRouter.swift in Sources */,

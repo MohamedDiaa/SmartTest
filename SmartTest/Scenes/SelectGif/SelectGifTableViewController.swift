@@ -76,7 +76,6 @@ class SelectGifTableViewController: BaseTableViewController, SelectGifDisplayLog
         return viewModel.urls?.count ?? 0
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GifTableViewCell.self), for: indexPath) as? GifTableViewCell
@@ -87,6 +86,14 @@ class SelectGifTableViewController: BaseTableViewController, SelectGifDisplayLog
         cell?.load(with: urlString)
         
         return cell ?? UITableViewCell()
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let urlString = searchViewModel?.urls?[indexPath.row]
+
+        let request = SelectGif.SelectGif.Request(selectedURL: urlString)
+        interactor?.selectGif(request: request)
     }
     
     // MARK: - display logic
@@ -104,15 +111,19 @@ class SelectGifTableViewController: BaseTableViewController, SelectGifDisplayLog
         self.searchViewModel = viewModel
         
         DispatchQueue.main.async { [weak self] in
-        
+            
             self?.tableView.reloadData()
         }
     }
     
     func displaySelectGif(viewModel: SelectGif.SelectGif.ViewModel){
         
-        router?.routeToGuessGif()
-        
+        switch viewModel.scene {
+        case .guessGif:
+            router?.routeToGuessGif()
+        default:
+            return
+        }
     }
     
     @IBAction func start() {

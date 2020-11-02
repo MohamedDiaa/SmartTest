@@ -21,9 +21,12 @@ class SelectGifRouter: SelectGifRoutingLogic {
     func routeToGuessGif() {
         
         let name = String(describing: GuessGif.self)
-        guard let destination = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController() as? GuessGifTableViewController
+        guard let source = dataStore,
+            let destination = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController() as? GuessGifTableViewController,
+            var destinationDataStore = destination.router?.dataStore
             else{ return }
         
+        passDataToGuessGif(source: source, destination: &destinationDataStore)
         navigateToGuessGif(source: viewController,
                            destination: destination)
     }
@@ -33,5 +36,12 @@ class SelectGifRouter: SelectGifRoutingLogic {
     func navigateToGuessGif(source: UIViewController?, destination: UIViewController) {
         
         source?.navigationController?.pushViewController(destination, animated: true)
+    }
+    
+    // MARK: - data passing
+    
+    func passDataToGuessGif(source: SelectGifDataStore, destination: inout GuessGifDataStore) {
+        
+        destination.selectedURL = source.selectedURL
     }
 }

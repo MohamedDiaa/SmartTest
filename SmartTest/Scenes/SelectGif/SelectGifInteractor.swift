@@ -16,12 +16,15 @@ protocol SelectGifBusinessLogic: class {
 
 protocol SelectGifDataStore: class {
     
+    var selectedURL: String? { get set }
 }
 
 class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
     
     var presenter: SelectGifPresentationLogic?
     var giphySearchService: GiphySearchServiceProtocol =  GiphySearchService()
+    
+    var selectedURL: String?
     
     func searchForGif(request: SelectGif.SearchForGif.Request){
         
@@ -38,6 +41,11 @@ class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
     
     func selectGif(request: SelectGif.SelectGif.Request){
         
+        guard  let selected = request.selectedURL
+            else { return }
+        
+        selectedURL = selected
+
         let response = SelectGif.SelectGif.Response()
         presenter?.presentSelectGif(response: response)
     }

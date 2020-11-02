@@ -14,10 +14,13 @@ protocol GuessGifBusinessLogic: class {
 
 protocol GuessGifDataStore: class {
     
+    var selectedURL: String? { get set }
 }
 
 class GuessGifInteractor: GuessGifBusinessLogic, GuessGifDataStore {
     
     var presenter: GuessGifPresentationLogic?
+    var selectedURL: String? 
+
     
 }

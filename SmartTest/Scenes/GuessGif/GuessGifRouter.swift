@@ -13,7 +13,12 @@ protocol GuessGifRoutingLogic {
      func routeToScore()
 }
 
-class GuessGifRouter: GuessGifRoutingLogic{
+protocol GuessGifDataPassing {
+    
+    var dataStore: GuessGifDataStore? { get set }
+}
+
+class GuessGifRouter: GuessGifRoutingLogic, GuessGifDataPassing{
     
     weak var viewController: GuessGifTableViewController?
     weak var dataStore: GuessGifDataStore?
