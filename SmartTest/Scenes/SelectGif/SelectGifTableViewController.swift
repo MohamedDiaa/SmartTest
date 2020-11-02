@@ -14,7 +14,7 @@ protocol SelectGifDisplayLogic: class {
     func displaySelectGif(viewModel: SelectGif.SelectGif.ViewModel)
 }
 
-class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating {
+class SelectGifTableViewController: BaseTableViewController, SelectGifDisplayLogic, UISearchBarDelegate, UISearchControllerDelegate , UISearchResultsUpdating {
     
     var interactor: SelectGifBusinessLogic?
     var router: SelectGifRoutingLogic?
@@ -45,6 +45,7 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     }
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         
         let search = UISearchController(searchResultsController: nil)
@@ -59,9 +60,7 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
                                           action: #selector(start))
         
         navigationItem.rightBarButtonItems = [startButton]
-        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "reuseIdentifier")
     }
-    
     
     // MARK: - Table view data source
     
@@ -80,16 +79,14 @@ class SelectGifTableViewController: UITableViewController, SelectGifDisplayLogic
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: String(describing: GifTableViewCell.self), for: indexPath) as? GifTableViewCell
         
         // Configure the cell...
         
-        let url = searchViewModel?.urls?[indexPath.row]
-        print(url)
-        cell.textLabel?.text = url //"Hello"
-        cell.textLabel?.textColor = .black
+        let urlString = searchViewModel?.urls?[indexPath.row]
+        cell?.load(with: urlString)
         
-        return cell
+        return cell ?? UITableViewCell()
     }
     
     // MARK: - display logic
