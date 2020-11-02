@@ -71,7 +71,6 @@ class GuessGifTableViewController: UITableViewController, GuessGifDisplayLogic, 
     }
     
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
         
@@ -87,8 +86,8 @@ class GuessGifTableViewController: UITableViewController, GuessGifDisplayLogic, 
     // MARK: - display logic
     
     func updateSearchResults(for searchController: UISearchController) {
-        guard let text = searchController.searchBar.text else { return }
-        print(text)
+        
+        router?.routeToScore()
     }
     
     

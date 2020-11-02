@@ -6,14 +6,33 @@
 //  Copyright © 2020 Mohamed Diaa. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol GuessGifRoutingLogic {
     
+     func routeToScore()
 }
 
 class GuessGifRouter: GuessGifRoutingLogic{
     
     weak var viewController: GuessGifTableViewController?
     weak var dataStore: GuessGifDataStore?
+
+    func routeToScore() {
+        
+        let name = String(describing: Score.self)
+        guard let destination = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController() as? ScoreViewController
+            else{ return }
+        
+        navigateToScore(source: viewController,
+                           destination: destination)
+    }
+    
+    // MARK: - navigation
+    
+    func navigateToScore(source: UIViewController?, destination: UIViewController) {
+        
+        source?.navigationController?.pushViewController(destination, animated: true)
+    }
+
 }
