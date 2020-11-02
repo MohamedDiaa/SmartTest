@@ -30,7 +30,7 @@ class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
     
     func searchForGif(request: SelectGif.SearchForGif.Request){
         
-        guard let query = request.query, query.count > 3
+        guard let query = request.query, query.count > 2
             else{ return }
         
         giphySearchService.search(query: query, completion: { [weak self] (welcome, error) in
