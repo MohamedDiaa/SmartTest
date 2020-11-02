@@ -23,7 +23,6 @@ class GifTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    
     func load(with urlString: String?) {
         
         gifImageView.image = nil
@@ -43,5 +42,4 @@ class GifTableViewCell: UITableViewCell {
             }
         }
     }
-    
 }

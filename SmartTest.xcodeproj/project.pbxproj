@@ -26,7 +26,7 @@
 		C96B11FB254F723600050D2E /* GuessGifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11FA254F723600050D2E /* GuessGifPresenter.swift */; };
 		C96B11FD254F723F00050D2E /* GuessGifModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11FC254F723E00050D2E /* GuessGifModels.swift */; };
 		C96B11FF254F724700050D2E /* GuessGifRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B11FE254F724700050D2E /* GuessGifRouter.swift */; };
-		C96B1201254F726D00050D2E /* GuessGifTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1200254F726D00050D2E /* GuessGifTableViewController.swift */; };
+		C96B1201254F726D00050D2E /* GuessGifViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1200254F726D00050D2E /* GuessGifViewController.swift */; };
 		C96B1203254F735200050D2E /* GuessGif.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96B1202254F735200050D2E /* GuessGif.storyboard */; };
 		C96B1206254F782C00050D2E /* ScoreInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1205254F782C00050D2E /* ScoreInteractor.swift */; };
 		C96B1208254F783700050D2E /* ScorePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1207254F783700050D2E /* ScorePresenter.swift */; };
@@ -76,7 +76,7 @@
 		C96B11FA254F723600050D2E /* GuessGifPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifPresenter.swift; sourceTree = "<group>"; };
 		C96B11FC254F723E00050D2E /* GuessGifModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifModels.swift; sourceTree = "<group>"; };
 		C96B11FE254F724700050D2E /* GuessGifRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifRouter.swift; sourceTree = "<group>"; };
-		C96B1200254F726D00050D2E /* GuessGifTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifTableViewController.swift; sourceTree = "<group>"; };
+		C96B1200254F726D00050D2E /* GuessGifViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessGifViewController.swift; sourceTree = "<group>"; };
 		C96B1202254F735200050D2E /* GuessGif.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GuessGif.storyboard; sourceTree = "<group>"; };
 		C96B1205254F782C00050D2E /* ScoreInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreInteractor.swift; sourceTree = "<group>"; };
 		C96B1207254F783700050D2E /* ScorePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorePresenter.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				C96B11FA254F723600050D2E /* GuessGifPresenter.swift */,
 				C96B11FC254F723E00050D2E /* GuessGifModels.swift */,
 				C96B11FE254F724700050D2E /* GuessGifRouter.swift */,
-				C96B1200254F726D00050D2E /* GuessGifTableViewController.swift */,
+				C96B1200254F726D00050D2E /* GuessGifViewController.swift */,
 				C96B1202254F735200050D2E /* GuessGif.storyboard */,
 			);
 			path = GuessGif;
@@ -392,7 +392,7 @@
 				C96B11FB254F723600050D2E /* GuessGifPresenter.swift in Sources */,
 				C953BD8F254AFA35001298A3 /* SceneDelegate.swift in Sources */,
 				C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */,
-				C96B1201254F726D00050D2E /* GuessGifTableViewController.swift in Sources */,
+				C96B1201254F726D00050D2E /* GuessGifViewController.swift in Sources */,
 				C96B11FD254F723F00050D2E /* GuessGifModels.swift in Sources */,
 				C983D0912550964A00EDFFB4 /* URL+Resources.swift in Sources */,
 				C96B1208254F783700050D2E /* ScorePresenter.swift in Sources */,

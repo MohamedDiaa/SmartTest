@@ -10,12 +10,13 @@ import UIKit
 
 protocol ScoreDisplayLogic: class {
     
+    func displayScene(viewModel: Score.FetchScene.ViewModel)
 }
 
 class ScoreViewController: UIViewController, ScoreDisplayLogic {
     
     var interactor: ScoreBusinessLogic?
-    var router: ScoreRoutingLogic?
+    var router: (ScoreRoutingLogic & ScoreDataPassing)?
     
     @IBOutlet weak var guessedWordLabel: UILabel!
     @IBOutlet weak var answerWordLabel: UILabel!
@@ -46,8 +47,28 @@ class ScoreViewController: UIViewController, ScoreDisplayLogic {
         router.dataStore = interactor
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        loadScene()
+    }
+    
+    func loadScene() {
+        
+        let request = Score.FetchScene.Request()
+        interactor?.fetchScene(request: request)
+    }
+    
+    // MARK: - display
+    
+    func displayScene(viewModel: Score.FetchScene.ViewModel) {
+        
+        guessedWordLabel.text = viewModel.guess ?? ""
+        answerWordLabel.text = viewModel.solution ?? ""
+    }
+    
     @IBAction func startAgain() {
         
         navigationController?.popToRootViewController(animated: true)
     }
+    
 }

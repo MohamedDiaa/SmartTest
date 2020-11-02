@@ -12,7 +12,12 @@ protocol ScoreRoutingLogic {
     
 }
 
-class ScoreRouter: ScoreRoutingLogic{
+protocol ScoreDataPassing {
+    
+    var dataStore: ScoreDataStore? {get set}
+}
+
+class ScoreRouter: ScoreRoutingLogic, ScoreDataPassing{
     
     weak var viewController: ScoreViewController?
     weak var dataStore: ScoreDataStore?

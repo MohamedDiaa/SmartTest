@@ -10,9 +10,27 @@ import Foundation
 
 protocol GuessGifPresentationLogic: class {
     
+    func presentScene(response: GuessGif.FetchScene.Response)
+    func presentAnswer(response: GuessGif.SubmitAnswer.Response)
 }
 
 class GuessGifPresenter: GuessGifPresentationLogic {
     
-   weak var viewController: GuessGifDisplayLogic?
+    weak var viewController: GuessGifDisplayLogic?
+    
+    func presentScene(response: GuessGif.FetchScene.Response){
+        
+        guard let urlString = response.selectURLString,
+            let url = URL(string: urlString)
+            else { return }
+        
+        let viewModel = GuessGif.FetchScene.ViewModel(selectURL: url)
+        viewController?.displayScene(viewModel: viewModel)
+    }
+    
+    func presentAnswer(response: GuessGif.SubmitAnswer.Response) {
+        
+        let viewModel = GuessGif.SubmitAnswer.ViewModel(scene: .score)
+        viewController?.displayAnswer(viewModel: viewModel)
+    }
 }

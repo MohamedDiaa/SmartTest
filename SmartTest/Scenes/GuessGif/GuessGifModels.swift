@@ -11,4 +11,28 @@ import Foundation
 
 struct GuessGif{
     
+    struct FetchScene {
+        struct Request {
+            
+        }
+        struct Response {
+            var selectURLString: String?
+        }
+        struct ViewModel {
+            var selectURL: URL
+        }
+    }
+    
+    struct SubmitAnswer {
+        
+        struct Request {
+            var query: String?
+        }
+        struct Response {
+            
+        }
+        struct ViewModel {
+            var scene: Scene?
+        }
+    }
 }

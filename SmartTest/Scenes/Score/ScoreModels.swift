@@ -10,4 +10,16 @@ import Foundation
 
 struct Score {
     
+    struct FetchScene {
+        struct Request {
+        }
+        struct Response {
+            var solution: String?
+            var guess: String?
+        }
+        struct ViewModel {
+            var solution: String?
+            var guess: String?
+        }
+    }
 }

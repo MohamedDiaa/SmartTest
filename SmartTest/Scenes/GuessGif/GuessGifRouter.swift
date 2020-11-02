@@ -10,7 +10,7 @@ import UIKit
 
 protocol GuessGifRoutingLogic {
     
-     func routeToScore()
+    func routeToScore()
 }
 
 protocol GuessGifDataPassing {
@@ -20,17 +20,20 @@ protocol GuessGifDataPassing {
 
 class GuessGifRouter: GuessGifRoutingLogic, GuessGifDataPassing{
     
-    weak var viewController: GuessGifTableViewController?
+    weak var viewController: GuessGifViewController?
     weak var dataStore: GuessGifDataStore?
-
+    
     func routeToScore() {
         
         let name = String(describing: Score.self)
-        guard let destination = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController() as? ScoreViewController
+        guard let source = dataStore,
+            let destination = UIStoryboard(name: name, bundle: nil).instantiateInitialViewController() as? ScoreViewController,
+            var dataStore = destination.router?.dataStore
             else{ return }
         
+        passDataToScore(source: source, destination: &dataStore)
         navigateToScore(source: viewController,
-                           destination: destination)
+                        destination: destination)
     }
     
     // MARK: - navigation
@@ -39,5 +42,12 @@ class GuessGifRouter: GuessGifRoutingLogic, GuessGifDataPassing{
         
         source?.navigationController?.pushViewController(destination, animated: true)
     }
-
+    
+    // MARK: - data passing
+    
+    func passDataToScore(source: GuessGifDataStore, destination: inout ScoreDataStore) {
+      
+        destination.guess = source.guess
+        destination.solution = source.solution
+    }
 }

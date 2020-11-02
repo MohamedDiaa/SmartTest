@@ -1,28 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SJE-ae-LkU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ofO-8g-eL3">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Guess Gif Table View Controller-->
-        <scene sceneID="O5C-pj-iRh">
+        <!--Guess Gif View Controller-->
+        <scene sceneID="net-ZG-Kf4">
             <objects>
-                <tableViewController storyboardIdentifier="GuessGif" id="SJE-ae-LkU" customClass="GuessGifTableViewController" customModule="SmartTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="R9f-Yd-7Fl">
+                <viewController id="ofO-8g-eL3" customClass="GuessGifViewController" customModule="SmartTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Ys-cR-TZp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <connections>
-                            <outlet property="dataSource" destination="SJE-ae-LkU" id="7ic-a4-ZHc"/>
-                            <outlet property="delegate" destination="SJE-ae-LkU" id="Aef-yD-GVN"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gtm-mb-gR0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gbf-l1-iPB">
+                                <rect key="frame" x="57" y="156" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="5bB-VE-fGa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gmT-A2-lPt">
+                                <rect key="frame" x="10" y="240" width="394" height="305"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="305" id="0KQ-Pa-gtN"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess what the Gif in one word" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJD-4I-VCT">
+                                <rect key="frame" x="87.5" y="85" width="239" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="96E-0x-sNb">
+                                <rect key="frame" x="157" y="595" width="100" height="34"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="rLL-s5-dUd"/>
+                                </constraints>
+                                <state key="normal" title="Done"/>
+                                <connections>
+                                    <action selector="submitAnswer" destination="ofO-8g-eL3" eventType="touchUpInside" id="yMw-0s-LPs"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="gbf-l1-iPB" firstAttribute="top" secondItem="bJD-4I-VCT" secondAttribute="bottom" constant="50" id="0cw-IY-H8I"/>
+                            <constraint firstItem="96E-0x-sNb" firstAttribute="centerX" secondItem="tHt-y0-IiT" secondAttribute="centerX" id="1QL-yE-grh"/>
+                            <constraint firstItem="gbf-l1-iPB" firstAttribute="centerX" secondItem="tHt-y0-IiT" secondAttribute="centerX" id="EnS-xx-jMa"/>
+                            <constraint firstItem="gmT-A2-lPt" firstAttribute="top" secondItem="gbf-l1-iPB" secondAttribute="bottom" constant="50" id="F5s-K3-kGG"/>
+                            <constraint firstItem="bJD-4I-VCT" firstAttribute="top" secondItem="tHt-y0-IiT" secondAttribute="top" constant="41" id="SdP-Xs-aMC"/>
+                            <constraint firstItem="gmT-A2-lPt" firstAttribute="leading" secondItem="tHt-y0-IiT" secondAttribute="leading" constant="10" id="Z2j-tz-SjH"/>
+                            <constraint firstItem="bJD-4I-VCT" firstAttribute="centerX" secondItem="tHt-y0-IiT" secondAttribute="centerX" id="ZMt-ML-TlK"/>
+                            <constraint firstItem="tHt-y0-IiT" firstAttribute="trailing" secondItem="gmT-A2-lPt" secondAttribute="trailing" constant="10" id="jI4-iT-xWF"/>
+                            <constraint firstItem="96E-0x-sNb" firstAttribute="top" secondItem="gmT-A2-lPt" secondAttribute="bottom" constant="50" id="yNl-vv-rof"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tHt-y0-IiT"/>
+                    </view>
+                    <connections>
+                        <outlet property="gifImageView" destination="gmT-A2-lPt" id="Nap-EJ-8bY"/>
+                        <outlet property="mainLabel" destination="bJD-4I-VCT" id="zyE-Qn-56p"/>
+                        <outlet property="textField" destination="gbf-l1-iPB" id="mo4-nL-vQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDw-9C-oKa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-110" y="62"/>
+            <point key="canvasLocation" x="-133.33333333333334" y="10.714285714285714"/>
         </scene>
     </scenes>
 </document>

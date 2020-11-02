@@ -17,6 +17,7 @@ protocol SelectGifBusinessLogic: class {
 protocol SelectGifDataStore: class {
     
     var selectedURL: String? { get set }
+    var solution: String? {get set }
 }
 
 class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
@@ -25,6 +26,7 @@ class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
     var giphySearchService: GiphySearchServiceProtocol =  GiphySearchService()
     
     var selectedURL: String?
+    var solution: String?
     
     func searchForGif(request: SelectGif.SearchForGif.Request){
         
@@ -33,9 +35,9 @@ class SelectGifInteractor: SelectGifBusinessLogic, SelectGifDataStore {
         
         giphySearchService.search(query: query, completion: { [weak self] (welcome, error) in
                 
+            self?.solution = query
             let response = SelectGif.SearchForGif.Response(welcome: welcome, error: error)
             self?.presenter?.presentSearchForGif(response: response)
-            
         })
     }
     

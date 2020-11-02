@@ -10,9 +10,19 @@ import Foundation
 
 protocol ScorePresentationLogic: class {
     
+    func presentScene(response: Score.FetchScene.Response)
 }
 
 class ScorePresenter: ScorePresentationLogic{
     
     weak var viewController: ScoreDisplayLogic?
+    
+    func presentScene(response: Score.FetchScene.Response) {
+        
+        let viewModel = Score.FetchScene.ViewModel(
+            solution: response.solution,
+            guess: response.guess
+        )
+        viewController?.displayScene(viewModel: viewModel)
+    }
 }
