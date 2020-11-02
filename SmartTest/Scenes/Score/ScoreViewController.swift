@@ -21,6 +21,7 @@ class ScoreViewController: UIViewController, ScoreDisplayLogic {
     @IBOutlet weak var guessedWordLabel: UILabel!
     @IBOutlet weak var answerWordLabel: UILabel!
     @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var noteLabel: UILabel!
     
     // MARK: - setup
     
@@ -49,7 +50,13 @@ class ScoreViewController: UIViewController, ScoreDisplayLogic {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupUI()
         loadScene()
+    }
+    
+    func setupUI() {
+        
+        noteLabel.text = "Score is calculated by levenshtein algorithm"
     }
     
     func loadScene() {
@@ -64,6 +71,7 @@ class ScoreViewController: UIViewController, ScoreDisplayLogic {
         
         guessedWordLabel.text = viewModel.guess ?? ""
         answerWordLabel.text = viewModel.solution ?? ""
+        scoreLabel.text = viewModel.score ?? ""
     }
     
     @IBAction func startAgain() {

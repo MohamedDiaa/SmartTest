@@ -28,7 +28,17 @@ class ScoreInteractor: ScoreBusinessLogic, ScoreDataStore {
     
     func fetchScene(request: Score.FetchScene.Request) {
         
-        let response = Score.FetchScene.Response(solution: solution, guess: guess)
+        guard let solution = solution,
+            let guess = guess
+            else{ return }
+        
+        let score = solution.levenshtein(guess)
+        
+        let response = Score.FetchScene.Response(
+            solution: solution,
+            guess: guess,
+            score: score
+        )
         presenter?.presentScene(response: response)
     }
 }

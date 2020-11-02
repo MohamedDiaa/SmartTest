@@ -40,6 +40,7 @@
 		C983D0992550A4B100EDFFB4 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D0982550A4B100EDFFB4 /* BaseTableViewController.swift */; };
 		C983D09B2550A6DB00EDFFB4 /* UIImage+Gif.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09A2550A6DB00EDFFB4 /* UIImage+Gif.swift */; };
 		C983D09D2550ABAE00EDFFB4 /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09C2550ABAE00EDFFB4 /* Scene.swift */; };
+		C98D72292550BBB4004D5BDB /* String+levenshtein.swift in Sources */ = {isa = PBXBuildFile; fileRef = C98D72282550BBB4004D5BDB /* String+levenshtein.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,7 @@
 		C983D0982550A4B100EDFFB4 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
 		C983D09A2550A6DB00EDFFB4 /* UIImage+Gif.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Gif.swift"; sourceTree = "<group>"; };
 		C983D09C2550ABAE00EDFFB4 /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		C98D72282550BBB4004D5BDB /* String+levenshtein.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+levenshtein.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 				C983D0982550A4B100EDFFB4 /* BaseTableViewController.swift */,
 				C983D09A2550A6DB00EDFFB4 /* UIImage+Gif.swift */,
 				C983D09C2550ABAE00EDFFB4 /* Scene.swift */,
+				C98D72282550BBB4004D5BDB /* String+levenshtein.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				C953BD8F254AFA35001298A3 /* SceneDelegate.swift in Sources */,
 				C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */,
 				C96B1201254F726D00050D2E /* GuessGifViewController.swift in Sources */,
+				C98D72292550BBB4004D5BDB /* String+levenshtein.swift in Sources */,
 				C96B11FD254F723F00050D2E /* GuessGifModels.swift in Sources */,
 				C983D0912550964A00EDFFB4 /* URL+Resources.swift in Sources */,
 				C96B1208254F783700050D2E /* ScorePresenter.swift in Sources */,

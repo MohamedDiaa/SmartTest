@@ -21,7 +21,8 @@ class ScorePresenter: ScorePresentationLogic{
         
         let viewModel = Score.FetchScene.ViewModel(
             solution: response.solution,
-            guess: response.guess
+            guess: response.guess,
+            score: "\(response.score)"
         )
         viewController?.displayScene(viewModel: viewModel)
     }

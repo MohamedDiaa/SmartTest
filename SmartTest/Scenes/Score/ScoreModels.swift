@@ -16,10 +16,12 @@ struct Score {
         struct Response {
             var solution: String?
             var guess: String?
+            var score: Int
         }
         struct ViewModel {
             var solution: String?
             var guess: String?
+            var score: String?
         }
     }
 }
