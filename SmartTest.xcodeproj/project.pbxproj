@@ -12,6 +12,7 @@
 		C9245ECC254B034C004C1C48 /* SelectGifPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */; };
 		C9245ECE254B0355004C1C48 /* SelectGifModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECD254B0355004C1C48 /* SelectGifModels.swift */; };
 		C9245ED0254B036A004C1C48 /* SelectGifRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9245ECF254B036A004C1C48 /* SelectGifRouter.swift */; };
+		C937F23425534F0F0062CE70 /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C937F23325534F0F0062CE70 /* Score.storyboard */; };
 		C953BD8D254AFA35001298A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BD8C254AFA35001298A3 /* AppDelegate.swift */; };
 		C953BD8F254AFA35001298A3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BD8E254AFA35001298A3 /* SceneDelegate.swift */; };
 		C953BD91254AFA35001298A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C953BD90254AFA35001298A3 /* ViewController.swift */; };
@@ -33,7 +34,6 @@
 		C96B120A254F784500050D2E /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B1209254F784500050D2E /* ScoreViewController.swift */; };
 		C96B120C254F784E00050D2E /* ScoreModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B120B254F784E00050D2E /* ScoreModels.swift */; };
 		C96B120E254F785E00050D2E /* ScoreRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C96B120D254F785E00050D2E /* ScoreRouter.swift */; };
-		C96B1210254F786C00050D2E /* Score.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C96B120F254F786C00050D2E /* Score.storyboard */; };
 		C983D08E2550960A00EDFFB4 /* GiphySearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D08D2550960A00EDFFB4 /* GiphySearchService.swift */; };
 		C983D0912550964A00EDFFB4 /* URL+Resources.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D0902550964A00EDFFB4 /* URL+Resources.swift */; };
 		C983D09625509BFE00EDFFB4 /* GiphModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C983D09525509BFE00EDFFB4 /* GiphModel.swift */; };
@@ -59,6 +59,7 @@
 		C9245ECB254B034C004C1C48 /* SelectGifPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifPresenter.swift; sourceTree = "<group>"; };
 		C9245ECD254B0355004C1C48 /* SelectGifModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifModels.swift; sourceTree = "<group>"; };
 		C9245ECF254B036A004C1C48 /* SelectGifRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGifRouter.swift; sourceTree = "<group>"; };
+		C937F23325534F0F0062CE70 /* Score.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Score.storyboard; sourceTree = "<group>"; };
 		C953BD89254AFA35001298A3 /* SmartTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C953BD8C254AFA35001298A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C953BD8E254AFA35001298A3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +85,6 @@
 		C96B1209254F784500050D2E /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		C96B120B254F784E00050D2E /* ScoreModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreModels.swift; sourceTree = "<group>"; };
 		C96B120D254F785E00050D2E /* ScoreRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreRouter.swift; sourceTree = "<group>"; };
-		C96B120F254F786C00050D2E /* Score.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Score.storyboard; path = ../../../../../../../Applications/Score.storyboard; sourceTree = "<group>"; };
 		C983D08D2550960A00EDFFB4 /* GiphySearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphySearchService.swift; sourceTree = "<group>"; };
 		C983D0902550964A00EDFFB4 /* URL+Resources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Resources.swift"; sourceTree = "<group>"; };
 		C983D09525509BFE00EDFFB4 /* GiphModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiphModel.swift; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 				C96B1209254F784500050D2E /* ScoreViewController.swift */,
 				C96B120B254F784E00050D2E /* ScoreModels.swift */,
 				C96B120D254F785E00050D2E /* ScoreRouter.swift */,
-				C96B120F254F786C00050D2E /* Score.storyboard */,
+				C937F23325534F0F0062CE70 /* Score.storyboard */,
 			);
 			path = Score;
 			sourceTree = "<group>";
@@ -358,7 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C953BD99254AFA3B001298A3 /* LaunchScreen.storyboard in Resources */,
-				C96B1210254F786C00050D2E /* Score.storyboard in Resources */,
+				C937F23425534F0F0062CE70 /* Score.storyboard in Resources */,
 				C96B11F3254F60CE00050D2E /* GifTableViewCell.xib in Resources */,
 				C953BD96254AFA3B001298A3 /* Assets.xcassets in Resources */,
 				C953BD94254AFA35001298A3 /* Main.storyboard in Resources */,
