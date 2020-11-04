@@ -54,12 +54,6 @@ class SelectGifTableViewController: BaseTableViewController, SelectGifDisplayLog
         search.searchBar.placeholder = "Search for a gif the test"
         navigationItem.searchController = search
         
-        let startButton = UIBarButtonItem(title: "Start",
-                                          style: .plain,
-                                          target: self,
-                                          action: #selector(start))
-        
-        navigationItem.rightBarButtonItems = [startButton]
     }
     
     // MARK: - Table view data source
@@ -124,11 +118,5 @@ class SelectGifTableViewController: BaseTableViewController, SelectGifDisplayLog
         default:
             return
         }
-    }
-    
-    @IBAction func start() {
-        
-        let request = SelectGif.SelectGif.Request()
-        interactor?.selectGif(request: request)
     }
 }

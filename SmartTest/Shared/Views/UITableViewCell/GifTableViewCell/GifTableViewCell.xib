@@ -23,6 +23,7 @@
                         </constraints>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="1dQ-PT-wQm" secondAttribute="trailing" constant="5" id="E08-9C-0xf"/>
                     <constraint firstItem="1dQ-PT-wQm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="avp-nu-3mk"/>
